@@ -21,6 +21,7 @@ const App: React.FC = () => {
               type="email"
               className="form-control"
               placeholder="Username"
+              required
             />
           </div>
           <div className="form-group">
@@ -28,6 +29,7 @@ const App: React.FC = () => {
               type="password"
               className="form-control"
               placeholder="Password"
+              required
             />
           </div>
           <button type="submit" className="btn btn-primary">
