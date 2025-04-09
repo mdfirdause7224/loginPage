@@ -10,26 +10,40 @@ body {
   line-height: 20px;
 }
 
+h3 {
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-top: 34px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: sans-serif;
+  margin-top: -5px;
+}
+
+.para {
+  margin-top: 2px;
+}
+
 .middle-box {
-  width: 310px;
+  width: 300px;
   height: 500px;
   max-width: 400px;
   margin: 5% auto;
   background: #1d2d3a;
   text-align: center;
+  margin-top: 40px;
 }
 
 .logo-container {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .logo {
   max-width: 120px;
-  margin: 0 10px;
-}
-
-h3 {
-  margin-bottom: 15px;
+  margin: 0 8px;
 }
 
 .login-form {
@@ -41,19 +55,23 @@ h3 {
 }
 
 .form-control {
-  background-color: #233545;
-  color: #aab8c5;
   width: 100%;
-  padding: 8px 10px;
-  font-size: 14px;
-  border: 0px solid #aab8c5;
-  outline: none;
   box-sizing: border-box;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid rgb(45, 64, 82);
+  outline: none;
+  background-color: rgb(35, 53, 69);
+  color: rgb(170, 184, 197);
 }
 
-.form-control:focus {
-  border: 1px solid;
-  border-color: #1ab394;
+.form-control:focus{
+  border: 1px solid #1ab394;
+}
+
+.form-control::placeholder {
+  color: rgb(115, 128, 137)
+  ;
 }
 
 .btn {
@@ -72,21 +90,30 @@ h3 {
   background-color: #1ab394;
   color: white;
   border: none;
+  padding-bottom: 10px;
 }
 
 .btn-primary:hover {
   background-color: #18a689;
 }
 
+.btn-primary:focus {
+  border: none;
+  outline: none;
+}
+
 .btn-secondary {
   background-color: #2d4052;
   color: #aab8c5;
-  margin-top: 10px;
-  width: 89%;
+  margin-top: 8px;
+  width: 97%;
+  font-size: 13px;
+  padding: 4px;
+  padding-bottom: 6px;
 }
 
 .btn-secondary:hover {
-  color: black;
+  color: #aab8c5;
 }
 
 .forgot-password {
@@ -94,10 +121,12 @@ h3 {
   margin-top: 10px;
   text-decoration: none;
   color: #76d1bf;
+  font-size: 14px;
+  margin-bottom: -5px;
 }
 
 .forgot-password:hover {
-  color: #666;
+  color: #76d1bf;
 }
 
 .text-muted {
@@ -105,8 +134,17 @@ h3 {
   color: #999;
 }
 
+.link {
+  color: #76d1bf;
+}
+
+.link:hover {
+  color: #76d1bf;
+}
+
 .footer {
-  margin-top: 20px;
-  font-size: 12px;
+  margin-top: 10px;
+  font-size: 14px;
   color: #aaa;
+  font-weight: 600;
 }

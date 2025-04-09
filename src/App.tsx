@@ -7,12 +7,11 @@ const App: React.FC = () => {
       <div className="login-wrapper">
         <div className="matter">
           <img className="image" src="./headimage.png" alt="" />
-          <h4>Welcome to IN+</h4>
-          <h5>
-            Perfectly designed and precisely prepared admin theme with over 50
-            pages with extra new web app views.
-          </h5>
-          <h5>Login in to see it in action.</h5>
+          <h3>Welcome to IN+</h3>
+          <p>
+          Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views.
+          </p>
+          <p className='para'>Login in. To see it in action.</p>
         </div>
 
         <form className="login-form" action="index.html" method="POST">
@@ -39,18 +38,18 @@ const App: React.FC = () => {
           <a href="#" className="forgot-password">
             <small>Forgot password?</small>
           </a>
-          <h5 className="text-muted">
+          <p className="text-muted">
             <small>Do not have an account?</small>
-          </h5>
-          <a className="btn btn-secondary" href="register.html">
+          </p>
+          <a className="btn btn-secondary" href="#">
             Create an account
           </a>
         </form>
 
-        <h5 className="footer">
+        <p className="footer">
           <small>
             <strong>©</strong> 2014 - {new Date().getFullYear()}{' '}
-            <a
+            <a className='link'
               href="https://wrapbootstrap.com/theme/inspinia-multipurpose-admin-dashboard-template-WB0R5L90S?ref=inspinia"
               target="_blank"
               rel="noreferrer"
@@ -59,7 +58,7 @@ const App: React.FC = () => {
             </a>{' '}
             By <span className="fw-bold">WebAppLayers</span>
           </small>
-        </h5>
+        </p>
       </div>
     </div>
   );
